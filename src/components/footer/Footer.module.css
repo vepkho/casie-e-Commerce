@@ -1,0 +1,97 @@
+.Container{
+    background: rgb(182,68,255);
+    background: linear-gradient(90deg, rgba(182,68,255,1) 0%, rgba(96,141,236,1) 65%);
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    gap: 120px;
+    padding: 40px 80px;
+    color: white;
+    height: 120px;
+}
+
+.ContainerLeft{
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.Container p{
+    margin: 0;
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+}
+
+.PhoneNumber{
+    font-size: 20px;
+}
+
+.FooterNav{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.FooterNav p{
+    color: white;
+}
+
+.ContainerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.SocialMedia{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.SocialIcon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Container{
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .ContainerLeft{
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Container{
+        height: 180px;
+    }
+    .ContainerLeft{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .Container{
+        height: 320px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ContainerLeft, .ContainerRight{
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

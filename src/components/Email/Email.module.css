@@ -1,0 +1,87 @@
+.Container{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.Title{
+    color: #2C6CE1;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.Contact{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Sender{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.Sender input{
+    width: 284px;
+}
+
+.Input{
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid #2C6CE1;
+    background-color: none;
+    margin: 16px 0;
+}
+
+.Input:hover{
+    border-bottom: 3px solid #2C6CE1;
+    height: 40px;
+}
+
+.Input::after, .Input:active, .Input:focus{
+    outline: none;
+}
+
+.Text{
+    padding: 20px 0 40px 0;
+}
+
+.Button{
+    margin: 16px 0 0 -6px;
+    width: 184px;
+    height: 42px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #2C6CE1;
+    color: white;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.Button:hover{
+    background: #8CAEEB;
+}
+
+@media only screen and (max-width: 768px) {
+    .Container{
+        padding: 80px 40px;
+    }
+    .Title{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .Sender{
+        flex-direction: column;
+        gap: 0;
+    }
+    .Sender Input{
+        width: 100%;
+    }
+}

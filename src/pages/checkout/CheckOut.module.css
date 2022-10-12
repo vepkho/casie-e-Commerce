@@ -1,0 +1,214 @@
+.CheckOut{
+    display: flex;
+    gap: 48px;
+    max-width: 1280px;
+    margin: 40px auto 120px auto;
+    padding: 0 20px;
+}
+
+.CheckOut p{
+    margin: 0;
+}
+
+.Cart{
+    width: 100%;
+    max-height: 480px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.Cart::-webkit-scrollbar {
+    width: 8px;
+    left: -4px;
+}
+   
+.Cart::-webkit-scrollbar-track {
+    box-shadow:inset 0 0 4px #8CAEEB;
+}
+   
+.Cart::-webkit-scrollbar-thumb {
+    background-color: #8CAEEB;
+}
+
+.Title{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: unset;
+    padding:20px 0;
+    color: black;
+    border-bottom: 1px solid #898A87;
+}
+
+.Statement{
+    height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #898A87;
+}
+
+.Description{
+    font-size: 24px;
+    margin: 0;
+}
+
+.Link{
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+.Link:hover{
+    color: #898A87;
+}
+
+
+.Summary{
+    min-width: 260px;
+}
+
+.CheckItem{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 24px ;
+}
+
+.SubTitle{
+    font-size: 18px;
+    max-width: 120px;
+}
+
+.Detail{
+    font-size: 18px;
+}
+
+.Country{
+    text-decoration: underline;
+}
+
+.Total{
+    margin-top: 24px;
+    border-top: 1px solid #898A87;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 350;
+    padding: 12px 0;
+}
+
+.Button{
+    margin: 16px 0 0 -6px;
+    min-width: 280px;
+    height: 42px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #2C6CE1;
+    color: white;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.Button:hover{
+    background: #8CAEEB;
+}
+
+
+.CartItem{
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+}
+
+.CartItemImage{
+    width: 95px;
+    height: 180px;
+}
+
+.Quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    height: 28px;
+    width: 90px;
+}
+
+.QuantityButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Quantity p{
+    margin-top: -2px;
+}
+
+.QuantityImage{
+    width: 14px;
+    height: 14px;
+}
+
+.CartItem .SubTitle{
+    padding-bottom: 12px;
+}
+
+.CartItemData{
+    font-size: 16px;
+    color: #696969;
+    font-weight: 300;
+    padding-top: 4px;
+}
+
+.Modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 32px;
+    background-color: white;
+}
+
+.Modal p{
+    margin: 0;
+    font-size: 32px;
+}
+
+.Modal button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+}
+
+.Footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 870px) {
+    .CheckOut{
+        flex-direction: column;
+    }
+    .Footer{
+        position:relative;
+    }
+    .Button{
+        width: 100%;
+    }
+}

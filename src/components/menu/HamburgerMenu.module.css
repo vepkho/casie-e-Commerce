@@ -1,0 +1,26 @@
+.Container{
+    width: 100vw;
+    height: 100%;
+    background-color: #FEFEFE;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 40px;
+}
+
+li{
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    color: #2C6CE1;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+li:hover{
+    color: #8CAEEB;
+}

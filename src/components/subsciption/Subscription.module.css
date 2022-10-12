@@ -1,0 +1,77 @@
+.Container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.Title{
+    font-size: 48px;
+    font-weight: 300;
+    color: #2C6CE1;
+}
+
+.Subscribe{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 24px;
+}
+
+.Email{
+    width: 200px;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid #2C6CE1;
+    background-color: none;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.Email:hover{
+    border-bottom: 3px solid #2C6CE1;
+    height: 40px;
+}
+
+.Email::after, .Email:active, .Email:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #2C6CE1;
+    font-size: 16px;
+}
+
+.Button{
+    width: 160px;
+    height: 42px;
+    background-color: #2C6CE1;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Button:hover{
+    background: #8CAEEB;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .Title{
+        font-size: 32px;
+    }
+    .Subscribe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Container ::placeholder{
+        color: #2C6CE1;
+        font-size: 16px;
+        padding-left: 24px;
+    }
+}

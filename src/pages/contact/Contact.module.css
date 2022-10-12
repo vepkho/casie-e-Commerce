@@ -1,0 +1,58 @@
+.Wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 40px 0 40px;
+    margin-left: -360px;
+}
+
+.Title{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: .9;
+    margin: 0;
+    max-width: 280px;
+    color: #2C6CE1;
+}
+
+.Articles{
+    padding: 0 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Wrapper{
+        margin-left: -260px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Wrapper{
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+
+    .Title{
+        font-size: 32px;
+        max-width: 220px;
+    }
+
+    .Arrow{
+        width: 96px;
+        height: 96px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .Wrapper{
+        justify-content: center;
+        padding: 40px 40px 0 40px;
+    }
+
+    .Title{
+        max-width: max-content;
+    }
+
+    .Arrow{
+        display: none;
+    }
+}

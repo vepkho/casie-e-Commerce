@@ -1,0 +1,108 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 0 40px;
+    z-index: 2;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+}
+
+.LogoImage{
+    width: 48px;
+    height: 96px;
+}
+
+.LogoText{
+    font-size: 32px;
+    font-family:sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-left: -24px;
+    color: #2C6CE1;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.LogoText:hover{
+    color: #B644FF;
+}
+
+.Navigation{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Navigation nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Navigation nav ul li{
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    color: #2C6CE1;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Navigation nav ul li:hover{
+    color: #8CAEEB;
+}
+
+.Cart{
+    width: 48px;
+    height: 48px;
+}
+
+.Quantity{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 42%;
+    margin-left: -36px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+
+.Menu{
+    display: none;
+}
+
+.Open{
+    display: block;
+}
+
+.Closed{
+    display: none;
+}
+
+.CloseIcon{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 10;
+
+}
+
+@media only screen and (max-width: 640px) {
+    nav{
+        display: none;
+    }
+
+    .Menu{
+        display: block;
+    }
+}

@@ -1,0 +1,41 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Image{
+    width: 200px;
+    height: 400px;
+}
+
+.Title{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+
+.Price{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #898A87;
+}
+.Button{
+    margin: 16px 0 0 -6px;
+    width: 184px;
+    height: 42px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #2C6CE1;
+    color: white;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.Button:hover{
+    background: #8CAEEB;
+}
